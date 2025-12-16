@@ -1,0 +1,106 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Навигация */
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+/* Карточки */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Кнопки */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4361ee, #3a0ca3);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+}
+
+/* Иконки */
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+/* Контент */
+.topic-content {
+    line-height: 1.8;
+}
+
+.topic-content pre {
+    background: #2b2d42;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #4cc9f0;
+    overflow-x: auto;
+}
+
+.topic-content code {
+    background-color: rgba(67, 97, 238, 0.1);
+    color: #4361ee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Прогресс-бар */
+.progress {
+    border-radius: 10px;
+    height: 20px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Алерты */
+.alert {
+    border-radius: 10px;
+    border: none;
+}

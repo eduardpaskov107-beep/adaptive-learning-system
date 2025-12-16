@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Адаптивная система обучения - Главная{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <!-- Герой-секция -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary mb-4">
+                <i class="fas fa-brain"></i> Адаптивная система обучения
+            </h1>
+            <p class="lead mb-4">
+                Персонализированное обучение с искусственным интеллектом.
+                Система определяет ваш уровень знаний и рекомендует только те материалы, которые вам действительно нужны.
+            </p>
+
+            {% if not session.student_id %}
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a href="/register" class="btn btn-primary btn-lg px-4 me-md-2">
+                    <i class="fas fa-play-circle"></i> Начать обучение
+                </a>
+            </div>
+            {% else %}
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a href="/learning" class="btn btn-primary btn-lg px-4 me-md-2">
+                    <i class="fas fa-book-open"></i> Продолжить обучение
+                </a>
+                <a href="/profile" class="btn btn-outline-primary btn-lg px-4">
+                    <i class="fas fa-chart-line"></i> Мой прогресс
+                </a>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Информация о системе -->
+        <div class="card shadow-lg mb-5">
+            <div class="card-header bg-info text-white">
+                <h4 class="mb-0"><i class="fas fa-info-circle"></i> Как работает система?</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="feature-icon bg-primary bg-gradient text-white rounded-3 p-3 mb-3">
+                            <i class="fas fa-clipboard-check fa-2x"></i>
+                        </div>
+                        <h5>1. Оценка уровня</h5>
+                        <p class="text-muted">Короткий тест определяет ваш текущий уровень знаний</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="feature-icon bg-success bg-gradient text-white rounded-3 p-3 mb-3">
+                            <i class="fas fa-robot fa-2x"></i>
+                        </div>
+                        <h5>2. AI анализ</h5>
+                        <p class="text-muted">ИИ анализирует слабые места и строит персонализированную программу</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="feature-icon bg-warning bg-gradient text-white rounded-3 p-3 mb-3">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <h5>3. Адаптивное обучение</h5>
+                        <p class="text-muted">Вы получаете только ту теорию, которую не знаете</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="feature-icon bg-danger bg-gradient text-white rounded-3 p-3 mb-3">
+                            <i class="fas fa-briefcase fa-2x"></i>
+                        </div>
+                        <h5>4. Применение на практике</h5>
+                        <p class="text-muted">Каждая тема объясняется в контексте вашей специализации</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

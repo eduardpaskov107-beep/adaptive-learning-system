@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Обучение - Адаптивная система обучения{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-9">
+        <div class="card shadow-lg mb-4">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0"><i class="fas fa-book-open"></i> Тема: Основы Python</h4>
+            </div>
+            <div class="card-body">
+                <h5>Переменные и типы данных</h5>
+
+                <div class="alert alert-info">
+                    <i class="fas fa-clock"></i> <strong>Время изучения:</strong> 10-15 минут
+                </div>
+
+                <div class="topic-content">
+                    <p><strong>Переменная</strong> - это именованная область памяти для хранения данных.</p>
+
+                    <p>Пример создания переменных в Python:</p>
+                    <pre><code>name = "Анна"          # строка
+age = 25               # целое число
+price = 19.99          # число с плавающей точкой
+is_student = True      # булево значение</code></pre>
+
+                    <p><strong>Основные типы данных:</strong></p>
+                    <ul>
+                        <li><code>int</code> - целые числа</li>
+                        <li><code>float</code> - числа с плавающей точкой</li>
+                        <li><code>str</code> - строки</li>
+                        <li><code>bool</code> - логические значения (True/False)</li>
+                        <li><code>list</code> - списки</li>
+                        <li><code>dict</code> - словари</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header bg-warning">
+                        <h5 class="mb-0"><i class="fas fa-question-circle"></i> Вопрос для закрепления</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Какой тип данных у значения 3.14?</strong></p>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="quiz" id="quiz1">
+                            <label class="form-check-label" for="quiz1">int</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="quiz" id="quiz2">
+                            <label class="form-check-label" for="quiz2">float</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="quiz" id="quiz3">
+                            <label class="form-check-label" for="quiz3">str</label>
+                        </div>
+
+                        <button type="button" class="btn btn-success mt-3"
+                                data-action="alert"
+                                data-message="Ответ принят! Правильный ответ: float">
+                            <i class="fas fa-check"></i> Проверить ответ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button type="button" class="btn btn-primary btn-lg" data-href="/learning">
+                        <i class="fas fa-forward"></i> Следующая тема
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-light">
+                <h6 class="mb-0"><i class="fas fa-user"></i> Ваш прогресс</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Студент:</strong> {{ session.student_id }}</p>
+                <p><strong>Уровень:</strong> Начинающий</p>
+                <p><strong>Тем изучено:</strong> 1 из 10</p>
+
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 10%">10%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

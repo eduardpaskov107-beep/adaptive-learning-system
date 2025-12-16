@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Регистрация - Адаптивная система обучения{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0"><i class="fas fa-user-plus"></i> Регистрация нового студента</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/register">
+                    <div class="mb-3">
+                        <label for="student_id" class="form-label">Ваш ID или имя</label>
+                        <input type="text" class="form-control" id="student_id" name="student_id"
+                               placeholder="Введите ваш уникальный идентификатор" required>
+                        <div class="form-text">Это имя будет использоваться для отслеживания вашего прогресса</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Выберите специализацию</label>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="specialization"
+                                       id="data_science" value="data_science" checked>
+                                <label class="form-check-label" for="data_science">
+                                    <i class="fas fa-chart-line"></i> Data Science
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="specialization"
+                                       id="web_dev" value="web_dev">
+                                <label class="form-check-label" for="web_dev">
+                                    <i class="fas fa-code"></i> Веб-разработка
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="specialization"
+                                       id="bioinformatics" value="bioinformatics">
+                                <label class="form-check-label" for="bioinformatics">
+                                    <i class="fas fa-dna"></i> Биоинформатика
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i> Начать обучение
+                        </button>
+                    </div>
+                </form>
+
+                <div class="text-center mt-3">
+                    <a href="/" class="text-decoration-none">
+                        <i class="fas fa-arrow-left"></i> Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
