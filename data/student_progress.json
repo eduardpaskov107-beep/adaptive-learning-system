@@ -1,0 +1,117 @@
+{
+  "123": {
+    "student_id": "123",
+    "specialization": "data_science",
+    "current_level": "beginner",
+    "assessment": {
+      "overall_level": "beginner",
+      "topic_scores": {
+        "oop_classes": 0.0,
+        "python_basics_variables": 0.0,
+        "python_basics_lists": 100.0
+      },
+      "weak_topics": [
+        "oop_classes",
+        "python_basics_variables"
+      ],
+      "strong_topics": [
+        "python_basics_lists"
+      ],
+      "overall_score": 33.33333333333333
+    },
+    "recommendations": [
+      {
+        "topic": "Основы Python",
+        "subtopic": "variables",
+        "subtopic_name": "Переменные и типы данных",
+        "priority": 100.0,
+        "current_score": 0.0,
+        "specialization_application": "В Data Science переменные хранят данные для анализа: массивы NumPy, DataFrames Pandas, результаты вычислений.",
+        "content_link": "python_basics/variables",
+        "level": "beginner"
+      },
+      {
+        "topic": "Основы Python",
+        "subtopic": "dictionaries",
+        "subtopic_name": "Словари (dictionaries)",
+        "priority": 100,
+        "current_score": 0,
+        "specialization_application": "В Data Science словари хранят параметры моделей, метаданные датасетов, результаты вычислений в виде JSON.",
+        "content_link": "python_basics/dictionaries",
+        "level": "beginner"
+      },
+      {
+        "topic": "Функции в Python",
+        "subtopic": "basic_functions",
+        "subtopic_name": "Основы функций",
+        "priority": 100,
+        "current_score": 0,
+        "specialization_application": "В Data Science функции обрабатывают данные, вычисляют метрики, визуализируют результаты. Часто используются с библиотеками NumPy и Pandas.",
+        "content_link": "functions/basic_functions",
+        "level": "intermediate"
+      },
+      {
+        "topic": "Функции в Python",
+        "subtopic": "decorators",
+        "subtopic_name": "Декораторы функций",
+        "priority": 100,
+        "current_score": 0,
+        "specialization_application": "В Data Science декораторы используются для кэширования результатов вычислений, логирования, измерения производительности алгоритмов.",
+        "content_link": "functions/decorators",
+        "level": "advanced"
+      },
+      {
+        "topic": "Объектно-ориентированное программирование",
+        "subtopic": "classes",
+        "subtopic_name": "Классы и объекты",
+        "priority": 100.0,
+        "current_score": 0.0,
+        "specialization_application": "В Data Science классы создают модели машинного обучения, обработчики данных, конвейеры обработки. Scikit-learn полностью основан на ООП.",
+        "content_link": "oop/classes",
+        "level": "intermediate"
+      }
+    ],
+    "studied_topics": [],
+    "learning_path": [
+      {
+        "topic": "Основы Python",
+        "subtopic": "variables",
+        "subtopic_name": "Переменные и типы данных",
+        "priority": 100.0,
+        "current_score": 0.0,
+        "specialization_application": "В Data Science переменные хранят данные для анализа: массивы NumPy, DataFrames Pandas, результаты вычислений.",
+        "content_link": "python_basics/variables",
+        "level": "beginner"
+      },
+      {
+        "topic": "Основы Python",
+        "subtopic": "dictionaries",
+        "subtopic_name": "Словари (dictionaries)",
+        "priority": 100,
+        "current_score": 0,
+        "specialization_application": "В Data Science словари хранят параметры моделей, метаданные датасетов, результаты вычислений в виде JSON.",
+        "content_link": "python_basics/dictionaries",
+        "level": "beginner"
+      },
+      {
+        "topic": "Функции в Python",
+        "subtopic": "basic_functions",
+        "subtopic_name": "Основы функций",
+        "priority": 100,
+        "current_score": 0,
+        "specialization_application": "В Data Science функции обрабатывают данные, вычисляют метрики, визуализируют результаты. Часто используются с библиотеками NumPy и Pandas.",
+        "content_link": "functions/basic_functions",
+        "level": "intermediate"
+      }
+    ],
+    "current_topic_index": 0,
+    "start_date": "2025-12-16T22:08:21.771760",
+    "last_activity": "2025-12-16T22:08:32.824898",
+    "total_questions_answered": 3,
+    "total_correct_answers": 1,
+    "streak_days": 1,
+    "last_study_date": "2025-12-16T22:08:21.771815",
+    "achievements": [],
+    "test_score": 33.33333333333333
+  }
+}
