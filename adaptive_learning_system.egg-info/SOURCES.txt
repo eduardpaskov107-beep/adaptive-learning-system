@@ -1,8 +1,0 @@
-README.md
-setup.py
-adaptive_learning_system.egg-info/PKG-INFO
-adaptive_learning_system.egg-info/SOURCES.txt
-adaptive_learning_system.egg-info/dependency_links.txt
-adaptive_learning_system.egg-info/requires.txt
-adaptive_learning_system.egg-info/top_level.txt
-tests/test_knowledge_assessment.py
