@@ -16,17 +16,25 @@
 
 ## 🏗️ Архитектура
 adaptive-learning-system/
-├── src/ # Исходный код
-│ ├── core/ # Основной движок
-│ ├── models/ # Модели ИИ
-│ ├── data/ # База знаний
-│ ├── utils/ # Вспомогательные функции
-│ └── cli/ # Интерфейс командной строки
-├── tests/ # Тесты
-├── data/ # Данные студентов
-├── scripts/ # Скрипты для CI/CD
-├── docs/ # Документация
-└── reports/ # Автоматические отчеты
+├── run.py                          # Точка входа
+├── requirements.txt                # Зависимости
+├── src/
+│   ├── __init__.py
+│   ├── cli/
+│   │   ├── __init__.py
+│   │   ├── enhanced_cli.py        # Улучшенный интерфейс
+│   │   └── main.py                # Старый интерфейс
+│   ├── core/
+│   │   ├── __init__.py
+│   │   └── learning_engine.py     # Улучшенный движок
+│   ├── data/
+│   │   ├── __init__.py
+│   │   └── knowledge_base.py      # Расширенная база знаний
+│   └── models/
+│       ├── __init__.py
+│       └── knowledge_assessment.py
+├── data/                           # Данные прогресса
+└── .github/workflows/              # CI/CD
 
 
 ## 🚀 Быстрый старт
