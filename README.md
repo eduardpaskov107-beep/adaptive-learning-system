@@ -75,7 +75,7 @@ source venv/bin/activate  # для Windows: venv\Scripts\activate
 # Установка зависимостей
 pip install -r requirements.txt
 
-# Запуск CLI интерфейса
+# Запуск CLI интерфейса(для проверки app_simple.py)
 python app.py
 
 # Или запуск тестов(может не работать)
