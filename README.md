@@ -59,7 +59,6 @@ adaptive-learning-system/
 ├── README.md
 ├── requirements.txt
 ├── run.py
-└── setup.py 
 ```
 ### Установка
 
